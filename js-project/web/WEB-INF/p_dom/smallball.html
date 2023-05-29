@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-image: url('../img/bg.jpeg')">
+<div id="bdiv" style="position: absolute">
+    <img src="../img/ball.webp" width="50px" height="50px"/>
+</div>
+</body>
+</html>
+<script language="JavaScript">
+    var x = 1;
+    var y = 1;
+    var bx = 0;
+    var by = 0;
+    var speed = 5;
+
+    function move() {
+        bx += x * speed;
+        by += y * speed;
+        document.getElementById("bdiv").style.top = by+'px' ;
+        document.getElementById("bdiv").style.left = bx +'px';
+        if (bx + document.getElementById("bdiv").offsetWidth >document.body.clientWidth || bx <0) {
+           x = -x;
+        }
+        if (by + document.getElementById("bdiv").offsetHeight >document.documentElement.clientHeight || by < 0) {
+          y = -y;
+        }
+    }
+
+    setInterval("move()", 10);
+</script>

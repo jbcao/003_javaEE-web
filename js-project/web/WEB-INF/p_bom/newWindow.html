@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+我是新窗口
+<input type="text" id="childInfo"/>
+<input type="button" value="在父窗口显示" onclick="notifyFather()"/>
+<span id="span2">子窗口信息</span>
+</body>
+</html>
+<script>
+    function notifyFather() {
+        var val = document.getElementById("childInfo").value;
+        opener.document.getElementById("fatherInfo").value = val;
+
+    }
+</script>

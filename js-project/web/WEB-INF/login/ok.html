@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ok page
+<span id="myspan">5</span>
+秒后跳转管理页面
+</body>
+</html>
+<script language="JavaScript">
+    function tiao() {
+        clearInterval(mytimer);
+        open("manage.html", "-blank");
+
+    }
+
+    setTimeout("javascript:alert('dd')", 5000);
+""
+    function changeSec() {
+        var time = document.getElementById("myspan").innerText;
+        time = time+1;
+       // time -= 1;
+        document.getElementById("myspan").innerText = time;
+    }
+
+    var mytimer = setInterval("changeSec()", 1000);
+</script>

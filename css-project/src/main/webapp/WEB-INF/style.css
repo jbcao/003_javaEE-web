@@ -1,0 +1,48 @@
+*{
+    /*margin:0;*/
+    /*margin: 10px 0px 10px 0px;*/
+    margin: 10px 30px 10px;
+    padding: 0;
+}
+
+#style{
+    font-size: 10px;
+    color: blanchedalmond;
+}
+
+#style span{
+    font-size: 20px;
+    color: red;
+}
+#style span span{
+    font-size: 20px;
+    color: blanchedalmond;
+}
+
+。ad1{
+    width: 231px;
+    height: 334px;
+}
+
+.ad2{
+    width: 2377px;
+    height: 3343px;
+}
+
+.ad3{
+    width: 27px;
+    height: 33px;
+}
+.ad1,.ad2,.ad3{
+    font-size: 10px;
+    color: blanchedalmond;
+}
+
+.style{
+    font-size: 10px;
+    color:red ;
+}
+.style2{
+    font-size: 10px;
+    color: darkgrey;
+}

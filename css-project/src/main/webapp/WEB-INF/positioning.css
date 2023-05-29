@@ -1,0 +1,19 @@
+.s1{
+    width: 100px;
+    height: 80px;
+    background-color: peachpuff;
+    margin-left: 5px;
+    float: left;
+}
+.s2{
+    width: 200px;
+    height: 80px;
+    background-color: pink;
+    margin-left: 5px;
+    float: left;
+}
+#special{
+    position: fixed;
+    left: 56px;
+    top: 99px;
+}

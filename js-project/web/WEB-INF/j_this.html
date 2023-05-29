@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script language="JavaScript">
+    function Dog() {
+    }
+    var dog = new Dog();
+    Dog.prototype.shot = function () {
+        document.writeln('wowwoe');
+    }
+    dog.shot();
+    var dog1=new Dog();
+    dog1.shot();
+    document.writeln(dog.shot()==dog1.shot())
+
+</script>

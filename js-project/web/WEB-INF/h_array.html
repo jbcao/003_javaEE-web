@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script language="JavaScript">
+    var weight = [2, 34, 55, 6, 777, 3];
+    var all = 0;
+    var avg = 0;
+    for (var i = 0; i < weight.length; i++) {
+        all += weight[i];
+    }
+    avg = all / weight.length;
+    document.writeln('avg weight' + avg.toFixed(2));
+    document.writeln('avg weight' + avg.constructor);
+    var myval = 900;
+
+    function abc(val) {
+        val = 90;
+    }
+
+    abc(myval);
+    document.writeln(myval);
+    document.writeln('<br/>');
+    var myarr = [20, 5, 4];
+
+    function abc2(arr) {
+        arr[0] = 90;
+    }
+
+    abc2(myarr);
+    for (var i = 0; i < myarr.length; i++) {
+        document.writeln(myarr[i] + " ");
+    }
+    myarr[4] = 4;
+    document.writeln(myarr.length);
+    var str ='hello u u';
+    var arr =str.split(" ",2);
+    for(var i=0;i<arr.length;i++){
+        document.writeln(arr[i]);
+    }
+    arr[2]=90;
+    for (var key in arr){
+        document.writeln(arr[key]);
+    }
+    document.writeln(arr);
+    document.writeln('<br/>');
+    var arr2=[[1,23,55],[8,23,5599],[1333,2443,525]];
+    for(var i=0;i<arr2.length;i++){
+       for(var j=0;j<arr2[i].length;j++){
+           document.writeln(arr2[i][j]+" ");
+       }
+        document.writeln('<br/>');
+    }
+    //二维数组转置
+    var arr3=[];
+    for(var i=0;i<arr2[0].length;i++){
+        arr3[i]=[];
+    }
+    for (var i=0;i<arr2.length;i++){
+        for(var j=0;j<arr2[i].length;j++){
+            arr3[j][i]=arr[i][j];
+        }
+    }
+
+
+</script>

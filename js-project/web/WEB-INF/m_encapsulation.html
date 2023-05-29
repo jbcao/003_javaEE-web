@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function person(name, age, sal) {
+        this.name = name;
+        var age = age;
+        var sal = sal;
+        this.show = function () {
+            alert(name);
+        }
+
+        function show2() {
+            alert(age + " " + sal);
+        }
+
+    }
+
+    var p = new person("cjb", 45, 10000);
+
+    person.prototype.fun1 = function () {
+        alert(this.name);
+        alert(this.age);
+        this.show();
+        show2();
+
+
+    }
+    var p = new person("jjj", 33, 556);
+    fun1();
+</script>

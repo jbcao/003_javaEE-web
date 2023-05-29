@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var dog = {
+            name: 'xiaoming', age: 45,
+            sayHello: function () {
+                alert('hello');
+
+            },
+            jisuan: function (a, b) {
+                alert(a + b);
+            }
+
+        }
+    ;
+
+    function test() {
+        alert(this.name);
+    }
+
+    for (var key in window) {
+        document.writeln(window[key] + '<br>')
+    }
+</script>

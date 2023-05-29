@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="description" content="block element">
+    <meta http-equiv="keywords" content="inline,bolck">
+    <title>Title</title>
+    <link href="block-inline.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--只占内容宽度-->
+<!--默认不换行-->
+<span class="s1">hello i am inline element</span><span class="s1">hello i am inline element</span><span class="s1">hello i am inline element</span>
+<!--块元素，占满整行，默认换行-->
+<div class="s2">hello i am a div element</div>
+<div class="s2">hello i am a div element</div>
+<div class="s2">hello i am a div element</div>
+<!--即使设置宽度比较小，仍然占据整行-->
+<div class="s3">hello i am a div element</div>
+<div class="s3">hello i am a div element</div>
+<!--行内元素转换为块元素-->
+<span style="display: block" class="s2">hello i am a span element</span>
+<span style="display: block" class="s2">hello i am a span element</span>
+<!--块元素转换为行内元素-->
+<div style="display: inline" class="s3">hello i am a div element</div>
+<div style="display: inline" class="s3">hello i am a div element</div>
+</body>
+</html>

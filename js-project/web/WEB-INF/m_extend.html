@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script language="JavaScript">
+    function stu(name, age) {
+        this.name = name;
+        this.age = age;
+        this.show = function () {
+            document.writeln(this.name + " " + this.age);
+        }
+    }
+    function dog(name,age){
+        this.name = name;
+        this.age = age;
+        this.show = function () {
+            document.writeln(this.name + " " + this.age);
+        }
+    }
+    function midstu(name, age) {
+        this.stu = stu;
+        this.stu(name, age);
+        this.show=function(){
+            document.writeln("helloooo");
+        }
+    }
+
+    var mid = new midstu("he",990);
+    mid.show();
+</script>

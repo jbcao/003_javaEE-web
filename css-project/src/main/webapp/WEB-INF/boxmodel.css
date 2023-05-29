@@ -1,0 +1,39 @@
+.s1{
+    width: 1000px;
+    margin:0 auto;
+    border:1px solid gainsboro;
+}
+.faceul{
+    width: 980px;
+    height: 1000px;
+   border: 1px solid ghostwhite;
+    list-style-type: none;
+    padding: 0;
+}
+.faceul li{
+    width: 115px;
+    height: 140px;
+    border:1px solid ghostwhite;
+    float: left;
+    margin-left: 5px;
+}
+.faceul img{
+    width: 110px;
+    height: 110px;
+    margin-left: 2px;
+    margin-top: 2px;
+
+}
+.faceul a{
+    font-size: 12px;
+    margin-left: 2px;
+    margin-top: 5px;
+
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: red;
+}

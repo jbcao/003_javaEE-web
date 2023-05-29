@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script language="JavaScript">
+    var n = window.prompt('输入一个整数');
+    n = parseInt(n);
+    var res = 0;
+    var tmp = 1;
+    for (var i = 1; i <= n; i++) {
+        for (var j = 1; j <= i; j++) {
+            tmp *= j;
+        }
+        res += tmp;
+        tmp = 1;
+    }
+    document.writeln('结果' + res);
+
+</script>

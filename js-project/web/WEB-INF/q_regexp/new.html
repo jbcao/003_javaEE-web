@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<textarea id="c" rows="10" cols="20">
+</textarea>
+<input type="button" value="测试" onclick="test()"/>
+</body>
+</html>
+<script language="JavaScript" type="text/javascript">
+    function test() {
+      var con = document.getElementById("c").value;
+        var my=/^[a-zA-Z0-9_]+@([a-zA-Z0-9]+\.)+(com|cn|net|org)$/gi;
+        while (res=my.exec(con)) {
+            alert(res[0]);
+        }
+    }
+</script>

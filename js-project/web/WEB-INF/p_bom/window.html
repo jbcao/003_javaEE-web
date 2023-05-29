@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" onclick="test()" value="test"/>
+<span id="mytime"></span>
+<img src="../img/ji.jpeg" width="50px" id="myimg"/>
+<input style="display: block" type="button" value="createwin" onclick="createwin(event)"/>
+<input style="display: block" type="button" value="movewin" onclick="movewin(event)"/>
+<input style="display: block" type="button" value="打开新窗口" onclick="test2(event)"/>
+
+</body>
+</html>
+<script language="JavaScript">
+    function test(obj) {
+        var res = window.confirm("are you sure delete");
+        if (res) {
+            document.writeln("yes");
+        } else {
+            document.writeln("no");
+        }
+    }
+
+    function showtime() {
+        mytime.innerText = new Date().toLocaleString();
+    }
+
+    //setInterval("showtime()", 1000);
+    var n=0;
+    var count=0;
+    function runphoto(){
+        count++;
+        var myimg=document.getElementById("myimg");
+        myimg.src="../img/"+((n++%5)+1)+".webp";
+        if(count==10){
+            clearInterval(myTimer);
+            setTimeout("rerun()",5000);
+        }
+    }
+    //var myTimer=setInterval("runphoto()",500);
+    function rerun() {
+        myTimer=setInterval("runphoto()",500);
+
+    }
+    function createwin(obj) {
+       myWindow=window.open('','','width=200,height=100');
+
+    }
+    function movewin(obj) {
+        moveBy(400,400);
+    }
+
+function test2() {
+        window.open("newWindow.html","_blank","channelmode=yes");
+}
+
+</script>

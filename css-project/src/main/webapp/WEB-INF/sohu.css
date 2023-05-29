@@ -1,0 +1,110 @@
+body {
+    width: 950px;
+    height: 1000px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.top {
+    width: 950px;
+    height: 22px;
+    background-color: aliceblue;
+}
+
+/*login*/
+.login {
+    width: 416px;
+    height: 22px;
+    background-color: black;
+    float: left;
+}
+
+/*设为首页*/
+.indexpage {
+    width: 105px;
+    height: 20px;
+    background-color: gray;
+    float: left;
+    margin-left: 80px;
+}
+
+/*超链接*/
+.myherf {
+    width: 250px;
+    height: 20px;
+    float: right;
+    background-color: blanchedalmond;
+}
+
+/*logo样式*/
+.logo {
+    width: 137px;
+    height: 68px;
+    background-color: aqua;
+    margin-top: 5px;
+    float: left;
+}
+
+.logo img {
+    width: 137px;
+    height: 68px;
+}
+
+/*导航栏*/
+.navi {
+    width: 807px;
+    height: 68px;
+    float: left;
+    background-color: aliceblue;
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+/*广告*/
+.ad {
+    width: 950px;
+    height: 212px;
+    margin-top: 5px;
+    float: left;
+    border: 1px solid silver;
+}
+
+/*学生广告*/
+.stuad {
+    width: 126px;
+    height: 196px;
+    background-color: chartreuse;
+    float: left;
+    margin: 5px 0 0 4px;
+}
+
+/*广告2*/
+.ad2 {
+    width: 453px;
+    height: 196px;
+    margin: 5px 0 0 14px;
+    background-color: chartreuse;
+    float: left;
+}
+
+/*房地产广告*/
+.ad3 {
+    width: 150px;
+    height: 196px;
+    background-color: blanchedalmond;
+    margin: 5px 0 0 14px;
+    float: left;
+}
+
+/*图片广告*/
+.picad {
+    width: 180px;
+    height: 212px;
+    float: right;
+    border-left: 1px solid silver;
+    /*可以水平居中，没有垂直居中*/
+    text-align: center;
+}
+.picad img{
+    /*margin-top: 6px;*/
+}

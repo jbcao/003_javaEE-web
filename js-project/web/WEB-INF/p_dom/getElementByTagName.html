@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="checkbox" name="hobby" value="足球"/> 足球
+<input type="checkbox" name="hobby" value="旅游"/> 旅游
+<input type="checkbox" name="hobby" value="音乐"/> 音乐
+<br>
+<input type="button" onclick="test()" value="获取所有标签">
+</body>
+</html>
+<script language="JavaScript">
+    function test() {
+        var my = document.getElementsByTagName("input");
+        for (var i = 0; i < my.length; i++) {
+
+            document.writeln("1");
+
+        }
+    }
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="checkbox" name="hobby" value="书法"/>书法
+<input type="checkbox" name="hobby" value="武术"/>武术
+<input type="checkbox" name="hobby" value="音乐"/>音乐
+<br>
+<input type="button" value="提交" onclick="test()"/>
+</body>
+</html>
+<script language="JavaScript" >
+    function test() {
+        var h=document.getElementsByName("hobby");
+        for(var i=0;i<h.length;i++){
+            if(h[i].checked){
+                alert(h[i].value);
+            }
+        }
+
+    }
+</script>

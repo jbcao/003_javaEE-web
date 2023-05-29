@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onkeydown="dos(event)">
+<div id="field" style="background-color: black;position: absolute;width: 2000px;height: 1000px">
+    <div id="tank"
+         style="background-position-y: 120px;background-image: url('../img/tank.png');width: 30px;height: 30px;position: absolute">
+    </div>
+</div>
+
+
+</body>
+</html>
+<script language="JavaScript">
+
+
+    function mytank(x, y, dir) {
+        this.x = x;
+        this.y = y;
+        this.dir = dir;
+        this.speed = 3;
+        tank.style.left = this.x + "px";
+        tank.style.top = this.y + "px";
+        tank.style.backgroundPositionY = dir + "px";
+        this.move = function (event) {
+            switch (event.keyCode) {
+                //左
+                case 65:
+                    this.x -= this.speed;
+                    this.dir = 3;
+                    tank.style.backgroundPositionY = "30px";
+                    break;
+                //下
+                case 83:
+                    this.y += this.speed;
+                    this.dir = 2;
+                    tank.style.backgroundPositionY = "60px";
+                    break;
+                //    右
+                case 68:
+                    this.x += this.speed;
+                    this.dir = 1;
+                    tank.style.backgroundPositionY = "90px";
+                    break;
+                //    上
+                case 87:
+                    this.y -= this.speed;
+                    this.dir = 0;
+                    tank.style.backgroundPositionY = "120px";
+                    break;
+            }
+            tank.style.left = this.x + "px";
+            tank.style.top = this.y + "px";
+        }
+    }
+
+    var hero = new mytank(200, 356, 0);
+    function dos(e) {
+        hero.move(e);
+
+    }
+</script>

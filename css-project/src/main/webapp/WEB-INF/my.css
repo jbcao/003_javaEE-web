@@ -1,0 +1,17 @@
+/*类选择器*/
+.style2{
+    font-weight: bold;
+    font-size: 20px;
+    background-color: bisque;
+}
+
+/*id选择器*/
+#style3{
+    font-size: 15px;
+    background: darkgoldenrod;
+}
+
+body{
+    color: aliceblue;
+}
+

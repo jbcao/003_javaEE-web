@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script language="JavaScript">
+    function Person(name,age){
+        this.name=name;
+        this.age=age;
+    }
+    var p1=new Person("caojianbang",23);
+    //alert(p1.name+p1.age);
+    function jisuan(n1,n2,oper){
+        if(oper=="+"){
+            return n1+n2;
+        }else if(oper=='-'){
+            return n1-n2;
+        }else if(oper=='*'){
+            return n1*n2;
+        }else if(oper=='/'){
+            return n1/n2;
+        }
+    }
+
+    function person(fun){
+        this.myfun=fun;
+    }
+    var p2=new person(jisuan);
+    alert(p2.myfun(2,3,"+"));
+</script>

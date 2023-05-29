@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="form.css" type="text/css"/>
+</head>
+<body>
+个人信息
+<form>
+    u<input type="text" name="uname"/><br/>
+    p<input type="password" value="pwd"/><br>
+    <input type="submit" value="提交"><br>
+</form>
+<form>
+    h1<input type="text" name="hobby1"><br>
+    h2<input type="text" name="hobby2"><br>
+    h3<input type="text" name="hobby3"><br>
+    <input type="submit" value="提交"><br>
+</form>
+<input type="button" value="testing" onclick="test()">
+<h1>注册新用户</h1>
+<br/>
+<!--注意这里是forms[2]-->
+<!--这里耽误了3个小时-->
+你好
+<form action="">
+    <table align="center">
+        <tr>
+            <td>姓　　名</td>
+            <td class="td2"><input type="text" name="uname"/><span id="span1" ></span></td>
+        </tr>
+        <tr>
+            <td>密　　码</td>
+            <td><input type="password" name="pwd1"/><span id="span2"></span></td>
+        </tr>
+        <tr>
+            <td>确认密码</td>
+            <td><input type="password" name="pwd2"/><span id="span3"></span></td>
+        </tr>
+        <tr>
+            <td>年　　龄</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>电子邮件</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>电　　话</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="提交" onclick="return check()"/></td>
+            <td><input type="reset" value="重置"/></td>
+        </tr>
+    </table>
+
+</form>
+<input type="button" value="测试" onclick="abc()">
+</body>
+</html>
+<script language="JavaScript" type="text/javascript">
+    function test() {
+        var f = document.forms;
+        alert(f.item(1).hobby2.value);
+    }
+
+    function check() {
+        span1.innerText="";
+        span2.innerText="";
+        span3.innerText="";
+        var re = true;
+        if (document.forms[2].uname.value.length < 4 || document.forms[2].uname.value.length > 6) {
+            span1.innerText = "用户名在4-6位";
+            re = false;
+        }
+
+        if (document.forms.item(2).pwd1.value.length < 3) {
+            span2.innerText = "密码要>3位";
+            re = false;
+        }
+
+        if (document.forms.item(2).pwd2.value.length != document.forms.item(2).pwd1.value.length) {
+            span3.innerText = "不一致";
+            re = false;
+        }
+        return re;
+    }
+    function abc() {
+        var all=document.all;
+        for(var i=0;i<all.length;i++){
+            console.log(all[i].nodeType+" "+all[i].nodeName)
+
+        }
+
+    }
+</script>

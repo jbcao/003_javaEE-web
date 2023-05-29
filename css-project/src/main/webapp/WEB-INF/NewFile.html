@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="keywords" content="html,css">
+    <meta http-equiv="description" content="this is my page">
+    <title>Insert title here</title>
+    <!--内部css-->
+    <!--少用-->
+    <style type="text/css">
+        .style1 {
+            font-size: 30px;
+            color: red;
+            font-weight: bold;
+        }
+
+        img {
+            filter: grayscale(100%);
+        }
+
+        a:link img {
+            filter: grayscale(100%);
+        }
+
+        a:hover img {
+            filter: grayscale(0%);
+        }
+    </style>
+    <link href="my.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<a href="ok.html" target="_blank">这是一个链接</a>
+<!--ID选择器-->
+<span id="style3">这是一则很重要的新闻</span>
+<br>
+<!--css原始使用方式-->
+<span style="font-size: 30px;color: blue;">栏目1</span><br/>
+<span style="font-size: 30px;color: red;">栏目1</span><br/>
+<span style="font-size: 30px;color: orangered;">栏目1</span><br/>
+<!--引用类选择器-->
+<span class="style1">栏目4</span><br/>
+<span class="style1">栏目5</span><br/>
+<span class="style1">栏目6</span><br/>
+<img src="img/OET.jpeg" width="200" height="200"/>
+<img src="img/OET2.jpeg" width="200" height="200"/>
+<img src="img/OET1.jpeg" width="200" height="200"/>
+<br>
+<a href="ok.html" target="_blank"><img src="img/OET.jpeg" width="200" height="200"/></a>
+<a href="ok.html" target="_blank"><img src="img/OET2.jpeg" width="200" height="200"/></a>
+<a href="ok.html" target="_blank"><img src="img/OET1.jpeg" width="200" height="200"/></a>
+<br>
+<span class="style2">新闻1</span><br>
+<span class="style2">新闻2</span><br>
+<span class="style2">新闻3</span><br>
+<span class="style2">新闻4</span><br>
+</body>
+</html>

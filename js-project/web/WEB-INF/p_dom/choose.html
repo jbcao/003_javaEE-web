@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="mycourse" onchange="getCourse();">
+    <option selected>--请选择一门课程--</option>
+</select>
+<textarea id="mytext" cols="30" rows="10">
+</textarea>
+</body>
+</html>
+<script language="JavaScript" type="text/javascript">
+
+    var myoption = document.createElement("option");
+    myoption.value = "java";
+    myoption.text = "java";
+    mycourse.add(myoption);
+    myoption = document.createElement("option");
+    myoption.value = "py";
+    myoption.text = "py";
+    mycourse.add(myoption);
+
+function getCourse() {
+    mytext.value+="选择"+mycourse.value+"\r\n";
+
+}
+</script>

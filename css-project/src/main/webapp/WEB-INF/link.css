@@ -1,0 +1,10 @@
+a:link{
+    color: darkgoldenrod;
+    text-decoration: aqua;
+}
+a:hover{
+    text-decoration: bisque;
+}
+a:visited{
+    color: rebeccapurple;
+}

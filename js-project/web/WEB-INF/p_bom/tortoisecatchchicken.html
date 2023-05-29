@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onkeydown="move(event)">
+<table id="table1" border="1px">
+    <tr>
+        <td><input type="button" value="测试节点" onclick="test()"></td>
+        <td><input type="button" value="上" onclick="move(this)"/></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="左" onclick="move(this)"/></td>
+        <td>ff</td>
+        <td><input type="button" value="右" onclick="move(this)"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="button" value="下" onclick="move(this)"/></td>
+        <td><input type="button" value="删除表格" onclick="deletetest(event)"></td>
+    </tr>
+</table>fff
+<div style="width: 500px;height: 400px;background-color: pink">
+    <img id="wugui" src="../img/wugui.jpeg"
+         style="position: absolute;width: 50px;height: 40px;left: 100px;top:120px ;"/>
+    <img id="cock" src="../img/ji.jpeg" style="position: absolute;width: 50px;height: 40px;left: 200px;top:200px"/>
+</div>
+</body>
+</html>
+<script language="JavaScript">
+    function move(obj) {
+        var wugui_height = 40;
+        var wugui_width = 50;
+        var cock_heitght = 40;
+        var cock_width = 50;
+        var wugui = document.getElementById("wugui");
+        if (window.event) {
+            key = obj.keyCode;
+        }
+        var wugui_top = wugui.style.top;
+        var wugui_left = wugui.style.left;
+        wugui_top = parseInt(wugui_top.substring(0, wugui_top.indexOf("p")));
+        wugui_left = parseInt(wugui_left.substr(0, wugui_left.length - 2));
+        if (obj.value == "下" || key == 40) {
+            wugui.style.top = (wugui_top + 10) + "px";
+            wugui_top = wugui_top + 10;
+        } else if (obj.value == "右" || key == 39) {
+            wugui.style.left = (wugui_left + 10) + "px";
+            wugui_left = wugui_left + 10;
+        } else if (obj.value == "上" || key == 38) {
+            wugui.style.top = (wugui_top - 10) + "px";
+            wugui_top = wugui_top - 10;
+        } else if (obj.value == "左" || key == 37) {
+            wugui.style.left = (wugui_left - 10) + "px";
+            wugui_left = wugui_left - 10;
+        }
+        var cock = document.getElementById("cock");
+        var cock_top = cock.style.top;
+        var cock_left = cock.style.top;
+        cock_top = parseInt(cock_top.substr(0, cock_top.length - 2));
+        cock_left = parseInt(cock_left.substr(0, cock_left.length - 2));
+        y = Math.abs(cock_top - wugui_top);
+        x = Math.abs(cock_left - wugui_left);
+        xx = 0;
+        yy = 0;
+        if (wugui_top < cock_top) {
+            if (y < wugui_height) {
+                yy = 1;
+            }
+        } else {
+            if (y < cock_heitght) {
+                yy = 1;
+            }
+        }
+        if (wugui_left < cock_left) {
+            if (x < wugui_width) {
+                xx = 1;
+            }
+
+        } else {
+            if (x < cock_width) {
+                xx = 1;
+            }
+        }
+        if (xx == 1 && yy == 1) {
+            wugui.style.left = 100 + "px";
+            wugui.style.top = 120 + "px";
+
+        }
+    }
+
+    function deletetest(obj) {
+        var t1 = document.getElementById("table1");
+        t1.deleteRow(0);
+        t1.rows[1].cells[1].innerText = "cojianbang";
+    }
+
+    function test() {
+        var node = $("table1");
+        document.writeln(node.border);
+        document.writeln(node.nextSibling);
+        document.writeln(node.parentNode.nodeName);
+
+
+    }
+
+    function $(id) {
+        return document.getElementById(id);
+
+    }
+</script>

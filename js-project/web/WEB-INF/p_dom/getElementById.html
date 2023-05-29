@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a id="a1" href="http://www.baidu.com">百度</a>
+
+<input type="button" value="test" onclick="test()">
+<h1 id="myHeader" onclick="getValue()">This is a header</h1>
+<input id="dd"/>
+
+</body>
+</html>
+<script language="JavaScript">
+    function test() {
+        var my=document.getElementById("a1");
+        alert(my.outerHTML);
+    }
+</script>

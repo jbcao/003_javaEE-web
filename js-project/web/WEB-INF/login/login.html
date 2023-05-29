@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="ok.html">
+    name:<input type="text" id="name"/><br/>
+    pass:<input type="password" id="pass"/><br/>
+    <input type="submit" value="login" onclick="checkUser()">
+
+</form>
+
+
+</body>
+</html>
+<script language="JavaScript">
+    function checkUser() {
+        if ($("name").value == "cjb" && $("pass").value == "    ") {
+            return true;
+        }else {
+            $("name").value="";
+            $("pass").value="";
+            return false;
+        }
+
+    }
+
+    function $(id) {
+        return document.getElementById(id);
+    }
+</script>

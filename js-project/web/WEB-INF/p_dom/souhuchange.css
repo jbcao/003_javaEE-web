@@ -1,0 +1,58 @@
+body {
+    font-size: 12px;
+}
+
+.div1 {
+    width: 126px;
+    height: 156px;
+}
+
+.navi {
+    width: 21px;
+    height: 156px;
+    float: left;
+}
+
+.navi ul {
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    float: left;
+}
+
+.navi li {
+    list-style-type: none;
+    width: 19px;
+    height: 42px;
+    margin-top: 2px;
+    text-align: center;
+    background-color: silver;
+    padding-top: 8px;
+}
+.rz {
+    display: none;
+}
+
+.cg {
+    display: none;
+}
+.zs, .rz, .cg {
+    width: 101px;
+    height: 154px;
+    margin-left: 3px;
+    margin-top: 2px;
+    float: left;
+}
+
+.zs ul, .rz ul, .cg ul {
+    padding: 0px;
+    margin-top: 0px;
+    float: left;
+
+}
+
+.zs ul li, .rz ul li, .cg ul li {
+    list-style-type: none;
+    line-height: 19px;
+}
+

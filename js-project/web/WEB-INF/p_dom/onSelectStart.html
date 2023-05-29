@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onscroll="window_onscroll()" >
+<a id="myhref" href="http://www.baidu.com" style="left:0px;top:50px;position:absolute;word-break: keep-all"><img
+        src="../img/wugui.jpeg"
+        width="50px"/></a>
+<textarea id="textarea1" rows="500" cols="500">
+</textarea>
+hhhhhhhhhhhhhh
+</body>
+</html>
+<script language="JavaScript">
+    function window_onscroll() {
+        document.getElementById("myhref").style.top = document.documentElement.scrollTop + 150 + "px";
+        document.getElementById("myhref").style.left = document.body.scrollLeft + 50 + "px";
+    }
+    function test() {
+        return false;
+
+    }
+</script>
+<script language="JavaScript" for=document event=onselectstart>
+    return test();
+</script>

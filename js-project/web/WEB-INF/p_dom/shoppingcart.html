@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    我的购物车
+</h1>
+<input type="checkbox" name="fruit" value="10" onclick="gw(this)"/>西瓜10元<br>
+<input type="checkbox" name="fruit" value="20" onclick="gw(this)"/>香蕉20元<br>
+<input type="checkbox" name="fruit" value="40" onclick="gw(this)"/>板栗40元<br>
+<input type="checkbox" name="fruit" value="50" onclick="gw(this)"/>哈密瓜50元<br>
+总价格：<span id="myspan"></span>
+<a href="#" onclick="selectall(this)">全选</a>
+<a href="#" onclick="selectall(this)">不全选</a>
+<input type="checkbox" onclick="selectall2(this)">全选
+</body>
+</html>
+<script language="JavaScript" type="text/javascript">
+    function gw(obj) {
+        var f = document.getElementsByName("fruit");
+        var totalprice = 0;
+        for (var i = 0; i < f.length; i++) {
+            if (f[i].checked) {
+                totalprice += parseFloat(f[i].value);
+            }
+            myspan.innerText = totalprice + "元";
+        }
+    }
+
+    function selectall(obj) {
+        var f = document.getElementsByName("fruit");
+        if (obj.innerText == "全选") {
+            for (var i = 0; i < f.length; i++) {
+                f[i].checked = true;
+            }
+        } else if (obj.innerText == "不全选") {
+            for (var i = 0; i < f.length; i++) {
+                f[i].checked = false;
+            }
+        }
+
+
+    }
+
+    function selectall2(obj) {
+        var f = document.getElementsByName("fruit");
+        if (obj.checked) {
+            for (var i = 0; i < f.length; i++) {
+                f[i].checked = true;
+            }
+        } else {
+            for (var i = 0; i < f.length; i++) {
+                f[i].checked = false;
+            }
+        }
+
+
+    }
+</script>

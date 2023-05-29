@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="vote " id="b1">
+</body>
+</html>
+<script language="JavaScript">
+    document.addEventListener("click",test);
+    function test() {
+        alert("voted");
+        document.removeEventListener("click",test);
+    }
+</script>

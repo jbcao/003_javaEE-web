@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script language="JavaScript">
+    function master() {
+        this.feed = function (animal, food) {
+            document.writeln("主任给" + animal.name + "喂食" + food.name);
+        }
+    }
+
+    function food(name) {
+        this.name = name;
+
+    }
+
+    function animal(name) {
+        this.name = name;
+
+    }
+
+    function bone(name) {
+        this.food = food;
+        this.food(name);
+    }
+
+    function pear(name) {
+        this.food = food;
+        this.food(name);
+    }
+
+    function fish(name) {
+        this.food = food;
+        this.food(name);
+    }
+
+    function dog(name) {
+        this.animal = animal;
+        this.animal(name);
+
+    }
+
+    function cat(name) {
+        this.animal = animal;
+        this.animal(name);
+
+    }
+
+    function monkey(name) {
+        this.animal = animal;
+        this.animal(name);
+
+    }
+
+    var dog = new dog("big huang");
+    var bone = new bone("paigu");
+    var master = new master();
+    master.feed(dog, bone);
+</script>

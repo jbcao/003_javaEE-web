@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="keywords" content="mario game">
+    <meta http-equiv="description" content="mario game">
+    <link rel="stylesheet" type="text/css" href="./mario.css">
+
+    <title>Title</title>
+</head>
+<body>
+<div class="gamediv">
+    <img id="mymario" src="img/mario.png" style="left:100px;top:50px;position:absolute;width: 50px" />
+</div>
+<table border="1px" class="controlcenter">
+    <tr align="center"><td colspan="3">游戏键盘</td></td></tr>
+    <tr align="center"><td>..</td><td><input type="button" value="↑" onclick="marioMove(0)"></td><td>..</td></tr>
+    <tr align="center"><td><input type="button" value="←" onclick="marioMove(3)"></td><td>..</td><td><input type="button" value="→" onclick="marioMove(1)"></td></tr>
+    <tr align="center"><td>..</td><td><input type="button" value="↓" onclick="marioMove(2)"></td><td>..</td></tr>
+</table>
+</body>
+</html>
+<script language="JavaScript" src="mario.js"></script>

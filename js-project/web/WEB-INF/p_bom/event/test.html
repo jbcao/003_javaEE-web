@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" onkeypress="test(event)">
+</body>
+</html>
+<script language="JavaScript">
+    function test(event) {
+        if(event.keyCode>=48&&event.keyCode<=57){
+
+        }else{
+            alert("nan");
+            event.returnValue=false;
+        }
+    }
+</script>

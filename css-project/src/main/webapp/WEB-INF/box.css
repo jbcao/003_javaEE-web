@@ -1,0 +1,22 @@
+body {
+    border: 1px solid grey;
+    width: 800px;
+    height: 1000px;
+    margin: 0 auto;
+}
+.s1{
+    width: 50px;
+    height: 54px;
+    border: 1px solid darkgrey;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline;
+    /*padding-top: 5px;*/
+    /*padding-left: 5px;*/
+}
+.s1 img{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+}

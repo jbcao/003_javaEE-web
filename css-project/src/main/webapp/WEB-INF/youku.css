@@ -1,0 +1,51 @@
+body {
+    margin: 0 auto;
+    width: 1000px;
+    height: 1000px;
+    /*border: 1px solid blue;*/
+    font-size: 12px;
+}
+
+.div1 {
+    width: 350px;
+    height: 400px;
+    border: 1px solid gray;
+    margin-top: 30px;
+}
+
+.font1 {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 2px 0 0 2px;
+}
+
+.span1 {
+    /*background-color: yellow;*/
+    display: block;
+}
+
+.span1 a {
+    /*margin-left: 180px;*/
+    float: right;
+}
+
+.faceul {
+    width: 350px;
+    height: 85px;
+    /*background-color: red;*/
+    list-style-type: none;
+    padding: 0;
+}
+
+.faceul li {
+    float: left;
+    width: 108px;
+    height: 80px;
+    margin-left: 8px;
+    /*放在该元素的其他元素左右居中*/
+    text-align: center;
+}
+.faceul img{
+    width:90px ;
+    height: 70px;
+}

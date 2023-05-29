@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="souhuchange.css" type="text/css">
+    <title>Title</title>
+</head>
+<body>
+<div class="div1">
+    <div class="navi">
+        <ul>
+            <li onmouseover="change('zs',this)" onmouseout="change2(this)">招生</li>
+            <li onmouseover="change('rz',this)" onmouseout="change2(this)">热招</li>
+            <li onmouseover="change('cg',this)" onmouseout="change2(this)">出国</li>
+        </ul>
+    </div>
+    <div id="zs" class="zs">
+        <ul>
+            <li><a href="#">招生招生招生招生<a>
+            <li/>
+            <li><a href="#">招生招生招生招生<a>
+            <li/>
+            <li><a href="#">招生招生招生招生<a>
+            <li/>
+            <li><a href="#">招生招生招生招生<a>
+            <li/>
+            <li><a href="#">招生招生招生招生<a>
+            <li/>
+            <li><a href="#">招生招生招生招生<a>
+            <li/>
+            <li><a href="#">招生招生招生招生<a>
+            <li/>
+            <li><a href="#">招生招生招生招生<a>
+            <li/>
+        </ul>
+    </div>
+    <div id="rz" class="rz">
+        <ul>
+            <li><a href="#">热招热招热招热招<a>
+            <li/>
+            <li><a href="#">热招热招热招热招<a>
+            <li/>
+            <li><a href="#">热招热招热招热招<a>
+            <li/>
+            <li><a href="#">热招热招热招热招<a>
+            <li/>
+            <li><a href="#">热招热招热招热招<a>
+            <li/>
+            <li><a href="#">热招热招热招热招<a>
+            <li/>
+            <li><a href="#">热招热招热招热招<a>
+            <li/>
+            <li><a href="#">热招热招热招热招<a>
+            <li/>
+        </ul>
+    </div>
+    <div id="cg" class="cg">
+        <ul>
+            <li><a href="#">出国出国出国出国<a>
+            <li/>
+            <li><a href="#">出国出国出国出国<a>
+            <li/>
+            <li><a href="#">出国出国出国出国<a>
+            <li/>
+            <li><a href="#">出国出国出国出国<a>
+            <li/>
+            <li><a href="#">出国出国出国出国<a>
+            <li/>
+            <li><a href="#">出国出国出国出国<a>
+            <li/>
+            <li><a href="#">出国出国出国出国<a>
+            <li/>
+            <li><a href="#">出国出国出国出国<a>
+            <li/>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+<script language="JavaScript" type="text/javascript">
+    function change(val, obj) {
+        obj.style.backgroundColor = '#ffc12d';
+        if (val == "zs") {
+            zs.style.display = "block";
+            rz.style.display = "none";
+            cg.style.display = "none";
+
+        } else if (val == "rz") {
+            zs.style.display = "none";
+            rz.style.display = "block";
+            cg.style.display = "none";
+        } else if (val == "cg") {
+            zs.style.display = "none";
+            rz.style.display = "none";
+            cg.style.display = "block";
+        }
+    }
+
+    function change2(obj) {
+        obj.style.backgroundColor = 'silver';
+    }
+
+</script>

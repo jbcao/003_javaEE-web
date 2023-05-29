@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><font><span id="test"  onclick="test1()">-</span>myfamily</font></p>
+<ul id="mylist">
+    <li>baba</li>
+    <li>mama</li>
+    <li>didi</li>
+</ul>
+</body>
+</html>
+<script>
+    function test1() {
+        if (test.innerText == "-") {
+            mylist.style.display="none";
+            test.innerText="+";
+        }else if(test.innerText == "+"){
+            mylist.style.display="block";
+            test.innerText="-";
+        }
+    }
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="打开子窗口" onclick="test()"/>
+<span id="myspan">父窗口消息</span>
+<input type="text" id="fatherInfo">
+<input type="button" value="在子窗口显示" onclick="notifychild()"/>
+
+</body>
+</html>
+<script language="JavaScript">
+    var newWin;
+
+    function test() {
+        newWin = window.open("newWindow.html", "-blank");
+    }
+
+    function notifychild() {
+
+        var val = document.getElementById("fatherInfo").value;
+
+        newWin.document.getElementById("chindInfo").value = val;
+
+    }
+
+</script>

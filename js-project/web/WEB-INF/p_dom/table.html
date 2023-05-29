@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>英雄排行榜</h1>
+<table id="mytab">
+    <tr>
+        <td>排名</td>
+        <td>姓名</td>
+        <td>外号</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>宋江</td>
+        <td>及时雨</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>卢俊义</td>
+        <td>玉麒麟</td>
+    </tr>
+</table>
+<input type="button" value="删除一行" onclick="test()"><br/>
+<input type="button" value="遍历一行" onclick="test2()"><br/>
+<input type="button" value="插入一行" onclick="test3()">
+<h1>请输入信息</h1>
+编号<input type="text" id="no"/><br>
+名字<input type="text" id="uname"/><br>
+外号<input type="text" id="nickname"/><br>
+<input type="button" value="添加" onclick="test4()">
+</body>
+</html>
+<script language="JavaScript" type="text/javascript">
+    function test() {
+        mytab.deleteRow(2);
+    }
+    function test2() {
+        for (var i =0; i < mytab.rows.length; i++) {
+            for (var j = 0; j < mytab.rows[i].cells.length; j++) {
+                console.log(mytab.rows[i].cells[j].innerText);
+            }
+        }
+    }
+    function test3(){
+        var row=mytab.insertRow(3);
+        row.insertCell(0).innerText="3";
+        row.insertCell(1).innerText="无用";
+        row.insertCell(2).innerText="智多星";
+    }
+    function test4() {
+        for(var i=0;i<mytab.rows.length;i++){
+            if(mytab.rows[i].cells[0].innerText==no.value){
+                alert("编号重复");
+                return;
+            }
+        }
+        var row=mytab.insertRow(mytab.rows.length);
+        row.insertCell(0).innerText=no.value;
+        row.insertCell(1).innerText=uname.value;
+        row.insertCell(2).innerText=nickname.value;
+    }
+</script>
